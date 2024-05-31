@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Step Functions on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/chapter-iv/step-functions/</link>
+    <description>Recent content in Step Functions on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-iv/step-functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thực hiện chuyển đổi từ định dạng CSV</title>
+      <link>http://localhost:1313/chapter-iv/step-functions/convert-csv-parquet/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-iv/step-functions/convert-csv-parquet/</guid>
+      <description>Thực hiện chuyển đổi từ định dạng CSV sang định dạng parquet cho các bảng gbank (ngân hàng chung), account (tài khoản) và card (thẻ), và từ định dạng JSON sang định dạng parquet cho bảng customer (CRM). Bước 1: Nhấp vào chuyển đổi song song “2MyStateMachineToParquet-” và bắt đầu thực thi.&#xA;Bước 2: Không thay đổi các tham số, và bắt đầu thực thi.&#xA;Bước 3: Xác minh quy trình làm việc để thấy rằng trong trường hợp này, chúng ta đang thực hiện 4 chuyển đổi song song.</description>
+    </item>
+    <item>
+      <title>Thực hiện chuyển đổi với các bảng dữ liệu thô</title>
+      <link>http://localhost:1313/chapter-iv/step-functions/convert-raw-data/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-iv/step-functions/convert-raw-data/</guid>
+      <description>Thực hiện chuyển đổi với các bảng dữ liệu thô nguồn từ cơ sở dữ liệu quan hệ và chuyển đổi chúng thành các tệp parquet. Kiểm tra trong các step functions của bạn State machine console .&#xA;Bước 1: Nhấp vào liên kết chuyển đổi cơ sở dữ liệu quan hệ “3MyStateMachineRelationalDB-”.&#xA;Bước 2: Bấm Start execution Bước 3: Không thay đổi các tham số và xác nhận Start execution.</description>
+    </item>
+  </channel>
+</rss>

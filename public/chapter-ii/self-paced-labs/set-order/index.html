@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png" type="image/png">
+
+    <title>Thiết lập yêu cầu :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+
+    
+    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
+    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
+    <link href="/css/theme.css?1717176760" rel="stylesheet">
+    <link href="/css/tabs.css?1717176760" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/chapter-ii/self-paced-labs/set-order/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+  
+  <img src="/images/logo/aws-workshop.png">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1717176760"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-i/" title="Giới thiệu workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-i/">
+          <b>🛠 </b>Giới thiệu workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-i/gioi-thieu/" title="Giới thiệu" class="dd-item ">
+        <a href="/chapter-i/gioi-thieu/">
+        Giới thiệu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/" title="Làm thế nào để bắt đầu?" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chapter-ii/">
+          <b>1. </b>Làm thế nào để bắt đầu?
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/self-paced-labs/" title="Self Paced Labs" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chapter-ii/self-paced-labs/">
+          <b>1.1. </b>Self Paced Labs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/set-order/" title="Thiết lập yêu cầu" class="dd-item active">
+        <a href="/chapter-ii/self-paced-labs/set-order/">
+        <b>1.1.1. </b>Thiết lập yêu cầu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/cloud-formation/" title="Triển khai mẫu CloudFormation" class="dd-item ">
+        <a href="/chapter-ii/self-paced-labs/cloud-formation/">
+        <b>1.1.2. </b>Triển khai mẫu CloudFormation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/set-order/" title="Truy cập Cổng thông tin sự kiện AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/set-order/">
+          <b>1.2. </b>Truy cập Cổng thông tin sự kiện AWS
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/" title="Tải dữ liệu và Điều phối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/">
+          <b>2. </b>Tải dữ liệu và Điều phối
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-table-definitions/" title="Định nghĩa Bảng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-table-definitions/">
+          <b>2.1. </b>Định nghĩa Bảng
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-lake-formation/" title="Thiết lập Lake Formation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-lake-formation/">
+          <b>2.2. </b>Thiết lập Lake Formation
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/connect-database/" title="Kết nối tới Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/connect-database/">
+          <b>2.3. </b>Kết nối tới Database
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/export-data/" title="Truy xuất dữ liệu từ các nguồn" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/export-data/">
+          <b>2.4. </b>Truy xuất dữ liệu từ các nguồn
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/use-glue-jobs/" title="Sử dụng Glue Jobs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/use-glue-jobs/">
+          <b>2.5. </b>Sử dụng Glue Jobs
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/" title="Chuẩn bị dữ liệu (Data Preparation)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/">
+          <b>3. </b>Chuẩn bị dữ liệu (Data Preparation)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/step-functions/" title="Step Functions" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/step-functions/">
+          <b>3.1. </b>Step Functions
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-csv-parquet/" title="Thực hiện chuyển đổi từ định dạng CSV" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-csv-parquet/">
+        <b>3.1.1. </b>Thực hiện chuyển đổi từ định dạng CSV
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-raw-data/" title="Thực hiện chuyển đổi với các bảng dữ liệu thô" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-raw-data/">
+        <b>3.1.2. </b>Thực hiện chuyển đổi với các bảng dữ liệu thô
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/query-athena/" title="Truy vấn với Athena" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/query-athena/">
+          <b>3.2. </b>Truy vấn với Athena
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/pyspark-glue/" title="PySpark - Glue" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/pyspark-glue/">
+          <b>4.1. </b>PySpark - Glue
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/glue-crawler/" title="Glue Crawler" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/glue-crawler/">
+          <b>4.2. </b>Glue Crawler
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-emr/" title="Amazon EMR" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-emr/">
+          <b>4.3. </b>Amazon EMR
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/set-lake-rule/" title="Cấp quyền Lake cho vai trò EMR" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/set-lake-rule/">
+        <b>4.3.1. </b>Cấp quyền Lake cho vai trò EMR
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/run-convert/" title="Chạy bước chuyển đổi" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/run-convert/">
+        <b>4.3.2. </b>Chạy bước chuyển đổi
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-dynamodb/" title="Amazon DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-dynamodb/">
+          <b>4.4. </b>Amazon DynamoDB
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vi/" title="Trực quan hoá với Quicksight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vi/">
+          <b>5. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vii/" title="Độ trễ thấp cho API và ứng dụng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vii/">
+          <b>6. </b>Độ trễ thấp cho API và ứng dụng
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vii/amazon-sagemaker-quicksight/">
+          <b>6.1. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/" title="Sử dụng Amazon SageMaker" class="dd-item ">
+        <a href="/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/">
+        <b>6.1.1. </b>Sử dụng Amazon SageMaker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/" title="Sử dụng Amazon QuickSight để tạo dataset từ Athena" class="dd-item ">
+        <a href="/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/">
+        <b>6.1.2. </b>Sử dụng Amazon QuickSight để tạo dataset từ Athena
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-viii/" title="Cleanup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-viii/">
+          <b>7. </b>Cleanup
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> HaLazy
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</a> > <a href='/chapter-ii/'>Làm thế nào để bắt đầu?</a> > <a href='/chapter-ii/self-paced-labs/'>Self Paced Labs</a> > Thiết lập yêu cầu
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Thiết lập yêu cầu
+            </h1>
+          
+
+        
+
+
+<p><strong>Thiết lập yêu cầu</strong><br>
+Thực hiện các bước sau trước khi khởi chạy mẫu CloudFormation nếu bạn muốn thiết lập trên tài khoản của riêng mình. Bỏ qua bước tiếp theo nếu bạn đang ở sự kiện AWS.<br>
+Tạo cặp khóa trong khu vực đã được cung cấp:<br>
+Cặp khóa, bao gồm khóa riêng và khóa công khai, là một bộ thông tin xác thực bảo mật dùng để chứng minh danh tính của bạn khi kết nối với một instance. Nhấp vào <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html">Tài liệu về cặp khóa</a> để tìm hiểu thêm.</p>
+<p>Các bước tạo cặp khóa:</p>
+<ul>
+<li>Đăng nhập vào bảng điều khiển AWS bằng thông tin đăng nhập tài khoản của bạn.</li>
+<li>Chọn khu vực nơi bạn đã triển khai hội thảo (ví dụ: us-west-2). Kiểm tra góc trên bên phải của bảng điều khiển để đảm bảo bạn đang ở đúng khu vực.
+<img src="/images/assets/3.png" alt="360 customer view">
+Đến <a href="https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs">Key pairs console</a> và tạo 1 cặp khoá ở vùng sau:<br>
+Key pair name: c360view-oregon<br>
+<img src="/images/assets/4.png" alt="360 customer view"><br>
+Click on Create key pair button.<br>
+<img src="/images/assets/5.png" alt="360 customer view"><br>
+Tải về cặp khoá.</li>
+</ul>
+<p>Nếu bạn sử dụng máy tính hệ điều hành Windows, tải khoá dưới định dạng file  ppk. Nếu là máy Mac hoặc Linux tải dưới định dạng file pem.</p>
+<p><strong>Tạo điểm cuối VPC cho Amazon S3</strong>
+Điểm cuối VPC cho phép bạn kết nối riêng tư VPC của mình với các dịch vụ AWS được hỗ trợ và các dịch vụ điểm cuối VPC do AWS PrivateLink cung cấp mà không cần cổng internet, thiết bị NAT, kết nối VPN, hoặc kết nối AWS Direct Connect. Để biết thêm thông tin, nhấp vào <a href="https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html">tài liệu về điểm cuối VPC</a>.</p>
+<p>Các bước tạo điểm cuối VPC cho Amazon S3:<br>
+Bước 1: Truy cập vào bảng điều khiển Amazon VPC và chọn &ldquo;Endpoints&rdquo; từ menu bên trái.<br>
+Bước 2: Nhấp vào &ldquo;Create Endpoint&rdquo; và sau đó chọn &ldquo;AWS Services&rdquo;.<br>
+<img src="/images/assets/6.png" alt="360 customer view"></p>
+<ul>
+<li>Service Name: com.amazonaws.us-east-1.s3</li>
+<li>Type Gateway</li>
+<li>Sử dụng Search Bar vì nó có thể ở trang thứ 2 của “AWS services”.<br>
+<img src="/images/assets/7.png" alt="360 customer view">
+Bước 3: Chọn VPC mặc định.<br>
+<img src="/images/assets/8.png" alt="360 customer view">
+Bước 4: Kiểm tra ID bảng định tuyến như trên.<br>
+Bước 5: Giữ nguyên chính sách Full access và không thay đổi chính sách.<br>
+<img src="/images/assets/9.png" alt="360 customer view">
+Bước 6: Tạo điểm cuối.<br>
+Bước 7: Bây giờ tạo một điểm cuối khác<br>
+Bước 8: Chọn</li>
+<li>Dịch vụ: điểm cuối com.amazonaws.us-east-1.secretsmanager</li>
+<li>Loại: Giao diện
+Bước 9: Chọn VPC mặc định.<br>
+Bước 10: Bao gồm TẤT CẢ các mạng con, bằng cách chọn hộp Mạng con chính.<br>
+<img src="/images/assets/10.png" alt="360 customer view">
+Bước 11: Chọn nhóm bảo mật mặc định.<br>
+Bước 12: Giữ nguyên lựa chọn Full Access<br>
+Bước 13: Tạo điểm cuối.<br>
+Bước 14: Bây giờ hãy chuyển đến bảng điều khiển Security Group console để cho phép lưu lượng truy cập gửi đến từ VPC của bạn ở cổng 443.<br>
+Bước 15: Kiểm tra nhóm bảo mật mặc định và nhấp vào -&gt; Hành động -&gt; Chỉnh sửa quy tắc gửi đến<br>
+(Add Rule) Type: HTTPS<br>
+Protocol: TCP<br>
+Port: 443<br>
+Source : Custom<br>
+IP Range : (Kiểm tra dải IP VPC của bạn), ví dụ ở case của tôi là 172.31.0.0/16.<br>
+<img src="/images/assets/11.png" alt="360 customer view">
+Save rules</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/chapter-ii/self-paced-labs/" title="Self Paced Labs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/chapter-ii/self-paced-labs/cloud-formation/" title="Triển khai mẫu CloudFormation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1717176760"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
+    <script src="/js/jquery.sticky.js?1717176760"></script>
+    <script src="/js/featherlight.min.js?1717176760"></script>
+    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
+    <script src="/js/learn.js?1717176760"></script>
+    <script src="/js/hugo-learn.js?1717176760"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1717176760"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

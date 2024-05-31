@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Xây dựng Chân dung Khách hàng 360 độ với Amazon Services'
+theme = 'hugo-theme-learn-master'
+disableShortcutsTitle=true
+disableSearch = false

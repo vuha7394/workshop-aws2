@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/logos/aws_smile-header-desktop-en-white_59x35.png" type="image/png">
+
+    <title>Step Functions :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+
+    
+    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
+    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
+    <link href="/css/theme.css?1717176760" rel="stylesheet">
+    <link href="/css/tabs.css?1717176760" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/chapter-iv/step-functions/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+  
+  <img src="/images/logo/aws-workshop.png">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1717176760"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-i/" title="Giới thiệu workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-i/">
+          <b>🛠 </b>Giới thiệu workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-i/gioi-thieu/" title="Giới thiệu" class="dd-item ">
+        <a href="/chapter-i/gioi-thieu/">
+        Giới thiệu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/" title="Làm thế nào để bắt đầu?" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/">
+          <b>1. </b>Làm thế nào để bắt đầu?
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/self-paced-labs/" title="Self Paced Labs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/self-paced-labs/">
+          <b>1.1. </b>Self Paced Labs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/set-order/" title="Thiết lập yêu cầu" class="dd-item ">
+        <a href="/chapter-ii/self-paced-labs/set-order/">
+        <b>1.1.1. </b>Thiết lập yêu cầu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/cloud-formation/" title="Triển khai mẫu CloudFormation" class="dd-item ">
+        <a href="/chapter-ii/self-paced-labs/cloud-formation/">
+        <b>1.1.2. </b>Triển khai mẫu CloudFormation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/set-order/" title="Truy cập Cổng thông tin sự kiện AWS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/set-order/">
+          <b>1.2. </b>Truy cập Cổng thông tin sự kiện AWS
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/" title="Tải dữ liệu và Điều phối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/">
+          <b>2. </b>Tải dữ liệu và Điều phối
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-table-definitions/" title="Định nghĩa Bảng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-table-definitions/">
+          <b>2.1. </b>Định nghĩa Bảng
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-lake-formation/" title="Thiết lập Lake Formation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-lake-formation/">
+          <b>2.2. </b>Thiết lập Lake Formation
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/connect-database/" title="Kết nối tới Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/connect-database/">
+          <b>2.3. </b>Kết nối tới Database
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/export-data/" title="Truy xuất dữ liệu từ các nguồn" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/export-data/">
+          <b>2.4. </b>Truy xuất dữ liệu từ các nguồn
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/use-glue-jobs/" title="Sử dụng Glue Jobs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/use-glue-jobs/">
+          <b>2.5. </b>Sử dụng Glue Jobs
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/" title="Chuẩn bị dữ liệu (Data Preparation)" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chapter-iv/">
+          <b>3. </b>Chuẩn bị dữ liệu (Data Preparation)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/step-functions/" title="Step Functions" class="dd-item
+        
+        active
+        
+        ">
+      <a href="/chapter-iv/step-functions/">
+          <b>3.1. </b>Step Functions
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-csv-parquet/" title="Thực hiện chuyển đổi từ định dạng CSV" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-csv-parquet/">
+        <b>3.1.1. </b>Thực hiện chuyển đổi từ định dạng CSV
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-raw-data/" title="Thực hiện chuyển đổi với các bảng dữ liệu thô" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-raw-data/">
+        <b>3.1.2. </b>Thực hiện chuyển đổi với các bảng dữ liệu thô
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/query-athena/" title="Truy vấn với Athena" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/query-athena/">
+          <b>3.2. </b>Truy vấn với Athena
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/pyspark-glue/" title="PySpark - Glue" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/pyspark-glue/">
+          <b>4.1. </b>PySpark - Glue
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/glue-crawler/" title="Glue Crawler" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/glue-crawler/">
+          <b>4.2. </b>Glue Crawler
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-emr/" title="Amazon EMR" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-emr/">
+          <b>4.3. </b>Amazon EMR
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/set-lake-rule/" title="Cấp quyền Lake cho vai trò EMR" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/set-lake-rule/">
+        <b>4.3.1. </b>Cấp quyền Lake cho vai trò EMR
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/run-convert/" title="Chạy bước chuyển đổi" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/run-convert/">
+        <b>4.3.2. </b>Chạy bước chuyển đổi
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-dynamodb/" title="Amazon DynamoDB" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-dynamodb/">
+          <b>4.4. </b>Amazon DynamoDB
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vi/" title="Trực quan hoá với Quicksight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vi/">
+          <b>5. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vii/" title="Độ trễ thấp cho API và ứng dụng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vii/">
+          <b>6. </b>Độ trễ thấp cho API và ứng dụng
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vii/amazon-sagemaker-quicksight/">
+          <b>6.1. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/" title="Sử dụng Amazon SageMaker" class="dd-item ">
+        <a href="/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/">
+        <b>6.1.1. </b>Sử dụng Amazon SageMaker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/" title="Sử dụng Amazon QuickSight để tạo dataset từ Athena" class="dd-item ">
+        <a href="/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/">
+        <b>6.1.2. </b>Sử dụng Amazon QuickSight để tạo dataset từ Athena
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-viii/" title="Cleanup" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-viii/">
+          <b>7. </b>Cleanup
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> HaLazy
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</a> > <a href='/chapter-iv/'>Chuẩn bị dữ liệu (Data Preparation)</a> > Step Functions
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+	<h3 id="step-functions">Step Functions</h3>
+<p>Step Functions thực hiện chuyển đổi các bảng dữ liệu thô từ nguồn, làm phẳng chúng và chuyển đổi thành các tệp Parquet..<br>
+Tài khoản của bạn đã tạo 3 công việc chuyển đổi khác nhau dựa trên AWS Step Functions, AWS Lambda Functions và Amazon Athena.</p>
+<ul>
+<li>Một để chuyển đổi các bảng GA thành một bảng phẳng không chuẩn hóa;</li>
+<li>Một cái thứ hai để chuyển đổi các bảng dữ liệu thô khác thành các bảng phân vùng parquet;</li>
+<li>Và cái cuối cùng để phân tích dữ liệu từ dữ liệu thô của cơ sở dữ liệu quan hệ.
+Kiểm tra <a href="https://us-west-2.console.aws.amazon.com/states/home?region=us-west-2#/statemachines">AWS Step Functions State machine console</a>.</li>
+</ul>
+<p>Bước 1:  Bấm vào link GA transformation “1MyStateMachineGA-”.
+<img src="/images/assets/100.png" alt="360 customer view">
+Bước 2: Bạn sẽ bắt đầu thực thi cho State Machine này.
+<img src="/images/assets/101.png" alt="360 customer view">
+Bước 3: Bắt đầu thực thi State machine.
+<img src="/images/assets/102.png" alt="360 customer view">
+Bước 4: Bạn không cần thay đổi gì, chấp nhận payload được đề xuất và bắt đầu thực thi.<br>
+Bước 5: Kiểm tra quy trình làm việc.<br>
+<img src="/images/assets/103.png" alt="360 customer view">
+Trong máy trạng thái Step Functions này, chúng ta đang thực hiện chuyển đổi cho các bảng GA. Lược đồ GA có các trường lồng nhau đang được làm phẳng bằng cách sử dụng các hàm CROSS JOIN UNNEST và xác định các kiểu dữ liệu struct và array lồng nhau.</p>
+<ul>
+<li>Máy trạng thái này sử dụng một hàm lambda để thực hiện chuyển đổi bằng cách sử dụng thực thi truy vấn Amazon Athena.</li>
+<li>Một hàm lambda khác được sử dụng để kiểm tra sự kết thúc của truy vấn trước đó, sau đó chờ hoặc chuyển sang các bước chuyển đổi tiếp theo.
+Bạn có thể kiểm tra từng mã chuyển đổi dữ liệu trong bảng điều khiển máy trạng thái Step Functions của bạn.</li>
+</ul>
+<p>Bước 1: Chỉnh sửa máy trạng thái GA của bạn.<br>
+<img src="/images/assets/104.png" alt="360 customer view">
+Bước 2: Đi đến tab định nghĩa.<br>
+Bạn có thể kiểm tra trong trường “query” của “Payload” trong mỗi tác vụ, các truy vấn nào được thực thi trong mỗi bước.<br>
+<img src="/images/assets/105.png" alt="360 customer view"></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/chapter-iv/" title="Chuẩn bị dữ liệu (Data Preparation)"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/chapter-iv/step-functions/convert-csv-parquet/" title="Thực hiện chuyển đổi từ định dạng CSV" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1717176760"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
+    <script src="/js/jquery.sticky.js?1717176760"></script>
+    <script src="/js/featherlight.min.js?1717176760"></script>
+    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
+    <script src="/js/learn.js?1717176760"></script>
+    <script src="/js/hugo-learn.js?1717176760"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1717176760"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>

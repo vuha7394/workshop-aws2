@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trực quan hoá với Quicksight on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/</link>
+    <description>Recent content in Trực quan hoá với Quicksight on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trực quan hoá với Quicksight</title>
+      <link>http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/amazon-sagemaker/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/amazon-sagemaker/</guid>
+      <description>5. Trực quan hoá với Quicksight Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng Amazon Quicksight. Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc: Bước 1: Đăng ký dịch vụ Amazon Quicksight.&#xA;Nếu bạn chưa có tài khoản Amazon Quicksight được kích hoạt trong tài khoản AWS của bạn, làm theo các bước sau đây.</description>
+    </item>
+    <item>
+      <title>Trực quan hoá với Quicksight</title>
+      <link>http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/amazone-quicksight/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vi/amazon-sagemaker-quicksight/amazone-quicksight/</guid>
+      <description>5. Trực quan hoá với Quicksight Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng Amazon Quicksight. Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc: Bước 1: Đăng ký dịch vụ Amazon Quicksight.&#xA;Nếu bạn chưa có tài khoản Amazon Quicksight được kích hoạt trong tài khoản AWS của bạn, làm theo các bước sau đây.</description>
+    </item>
+  </channel>
+</rss>

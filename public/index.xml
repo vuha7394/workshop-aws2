@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cấp quyền Lake cho vai trò EMR</title>
+      <link>http://localhost:1313/chapter-v/amazon-emr/set-lake-rule/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-v/amazon-emr/set-lake-rule/</guid>
+      <description>Cấp quyền Lake cho vai trò EMR đối với cơ sở dữ liệu Lake Formation. Bước 1: Đến Lake Formation console. Bước 2: Cấp quyền cơ sở dữ liệu cho vai trò EMR&#xA;Chọn c360view_stage Hành động -&amp;gt; Cấp quyền Chọn c360vEMRExecutionRole Databases: c360view_stage Chọn: Create Table, Alter, Drop, Describe, Super Bước 3: Cấp quyền bảng cho tất cả các bảng của cơ sở dữ liệu stage cho vai trò EMR.</description>
+    </item>
+    <item>
+      <title>Giới thiệu</title>
+      <link>http://localhost:1313/chapter-i/gioi-thieu/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-i/gioi-thieu/</guid>
+      <description>Giới thiệu Một trường hợp rất phổ biến là các tổ chức thường xem xét khách hàng của mình từ các góc độ khác nhau, chẳng hạn như góc độ trung thành, xem xét các chỉ số như: số năm lịch sử mua hàng, tần suất tương tác, hoặc góc độ nhân khẩu học như giá trị vòng đời khách hàng hoặc thu nhập. Chúng tôi gọi chúng là các chiều dữ liệu, và chúng tôi sẽ kết hợp nhiều chiều về khách hàng của bạn để cung cấp cho bạn khả năng hiển thị nhiều góc độ cùng một lúc.</description>
+    </item>
+    <item>
+      <title>Sử dụng Amazon SageMaker</title>
+      <link>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/</guid>
+      <description>Sử dụng Amazon SageMaker để chạy truy vấn SQL trên Amazon Athena Bước 1: Thiết lập quyền truy cập&#xA;Tạo IAM Role: Đảm bảo bạn có một IAM Role với các quyền cần thiết để truy cập Amazon Athena và SageMaker. Bạn có thể tạo một IAM Role mới hoặc sử dụng một role hiện có với các quyền AmazonAthenaFullAccess, AmazonS3FullAccess, và AmazonSageMakerFullAccess. Đính kèm IAM Role: Đính kèm IAM Role này vào notebook instance của SageMaker.</description>
+    </item>
+    <item>
+      <title>Thiết lập yêu cầu</title>
+      <link>http://localhost:1313/chapter-ii/self-paced-labs/set-order/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-ii/self-paced-labs/set-order/</guid>
+      <description>Thiết lập yêu cầu&#xA;Thực hiện các bước sau trước khi khởi chạy mẫu CloudFormation nếu bạn muốn thiết lập trên tài khoản của riêng mình. Bỏ qua bước tiếp theo nếu bạn đang ở sự kiện AWS.&#xA;Tạo cặp khóa trong khu vực đã được cung cấp:&#xA;Cặp khóa, bao gồm khóa riêng và khóa công khai, là một bộ thông tin xác thực bảo mật dùng để chứng minh danh tính của bạn khi kết nối với một instance.</description>
+    </item>
+    <item>
+      <title>Thực hiện chuyển đổi từ định dạng CSV</title>
+      <link>http://localhost:1313/chapter-iv/step-functions/convert-csv-parquet/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-iv/step-functions/convert-csv-parquet/</guid>
+      <description>Thực hiện chuyển đổi từ định dạng CSV sang định dạng parquet cho các bảng gbank (ngân hàng chung), account (tài khoản) và card (thẻ), và từ định dạng JSON sang định dạng parquet cho bảng customer (CRM). Bước 1: Nhấp vào chuyển đổi song song “2MyStateMachineToParquet-” và bắt đầu thực thi.&#xA;Bước 2: Không thay đổi các tham số, và bắt đầu thực thi.&#xA;Bước 3: Xác minh quy trình làm việc để thấy rằng trong trường hợp này, chúng ta đang thực hiện 4 chuyển đổi song song.</description>
+    </item>
+    <item>
+      <title>Chạy bước chuyển đổi</title>
+      <link>http://localhost:1313/chapter-v/amazon-emr/run-convert/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-v/amazon-emr/run-convert/</guid>
+      <description>Chạy bước chuyển đổi Bước 1: Đến EMR console. Bước 2: Bấm vào c360cluster ID. Bước 3: Bấm vào tab Steps.&#xA;Bước 4: Thêm bước.&#xA;Step type: Spark application Name: denormalization Deploy mode: Cluster Spark-submit option: leave blank Application location: s3://your_stage_bucket/library/c360_analytics.py&#xA;Sử dụng trình duyệt bucket để chọn vị trí ứng dụng. Arguments: &amp;ndash;BucketName your analytics bucket Chọn tên từ bảng điều khiển Amazon S3 và để lại một khoảng trống giữa chúng &amp;ndash;bucketName .</description>
+    </item>
+    <item>
+      <title>Thực hiện chuyển đổi với các bảng dữ liệu thô</title>
+      <link>http://localhost:1313/chapter-iv/step-functions/convert-raw-data/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-iv/step-functions/convert-raw-data/</guid>
+      <description>Thực hiện chuyển đổi với các bảng dữ liệu thô nguồn từ cơ sở dữ liệu quan hệ và chuyển đổi chúng thành các tệp parquet. Kiểm tra trong các step functions của bạn State machine console .&#xA;Bước 1: Nhấp vào liên kết chuyển đổi cơ sở dữ liệu quan hệ “3MyStateMachineRelationalDB-”.&#xA;Bước 2: Bấm Start execution Bước 3: Không thay đổi các tham số và xác nhận Start execution.</description>
+    </item>
+    <item>
+      <title>Triển khai mẫu CloudFormation</title>
+      <link>http://localhost:1313/chapter-ii/self-paced-labs/cloud-formation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/chapter-ii/self-paced-labs/cloud-formation/</guid>
+      <description>Triển khai mẫu CloudFormation để tạo cơ sở hạ tầng cơ bản nếu bạn xây dựng nó trên tài khoản của riêng mình.&#xA;Bước 1: Tải về mẫu Cloudformation cf-360view.yaml: Bấm chuột phải vào đây và lưu như 1 file. Bước 2: Mở AWS Cloudformation stack creation và upload file mẫu. Bước 3: Chọn Next và điền các thông số:&#xA;Stack name: c360view Network Configuration: Nên deploy đến VPC nào?: Default VPC (172.</description>
+    </item>
+    <item>
+      <title>Sử dụng Amazon QuickSight để tạo dataset từ Athena</title>
+      <link>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/</guid>
+      <description>Sử dụng Amazon QuickSight để tạo dataset từ Athena Bước 1: Đăng ký dịch vụ Amazon QuickSight&#xA;Truy cập Amazon QuickSight Console. Nhấn vào Sign up for QuickSight và điền thông tin cần thiết để đăng ký tài khoản QuickSight. Bước 2: Kết nối Amazon QuickSight với Athena&#xA;Mở Amazon QuickSight: Sau khi đăng ký, mở QuickSight console. Chọn Manage data từ thanh điều hướng trên cùng. Nhấn vào New data set và chọn Athena làm nguồn dữ liệu.</description>
+    </item>
+  </channel>
+</rss>

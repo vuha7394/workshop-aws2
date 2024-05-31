@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giới thiệu workshop on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/chapter-i/</link>
+    <description>Recent content in Giới thiệu workshop on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-i/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu</title>
+      <link>http://localhost:1313/chapter-i/gioi-thieu/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-i/gioi-thieu/</guid>
+      <description>Giới thiệu Một trường hợp rất phổ biến là các tổ chức thường xem xét khách hàng của mình từ các góc độ khác nhau, chẳng hạn như góc độ trung thành, xem xét các chỉ số như: số năm lịch sử mua hàng, tần suất tương tác, hoặc góc độ nhân khẩu học như giá trị vòng đời khách hàng hoặc thu nhập. Chúng tôi gọi chúng là các chiều dữ liệu, và chúng tôi sẽ kết hợp nhiều chiều về khách hàng của bạn để cung cấp cho bạn khả năng hiển thị nhiều góc độ cùng một lúc.</description>
+    </item>
+  </channel>
+</rss>

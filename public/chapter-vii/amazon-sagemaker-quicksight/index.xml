@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trực quan hoá với Quicksight on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/</link>
+    <description>Recent content in Trực quan hoá với Quicksight on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sử dụng Amazon SageMaker</title>
+      <link>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazon-sagemaker/</guid>
+      <description>Sử dụng Amazon SageMaker để chạy truy vấn SQL trên Amazon Athena Bước 1: Thiết lập quyền truy cập&#xA;Tạo IAM Role: Đảm bảo bạn có một IAM Role với các quyền cần thiết để truy cập Amazon Athena và SageMaker. Bạn có thể tạo một IAM Role mới hoặc sử dụng một role hiện có với các quyền AmazonAthenaFullAccess, AmazonS3FullAccess, và AmazonSageMakerFullAccess. Đính kèm IAM Role: Đính kèm IAM Role này vào notebook instance của SageMaker.</description>
+    </item>
+    <item>
+      <title>Sử dụng Amazon QuickSight để tạo dataset từ Athena</title>
+      <link>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-vii/amazon-sagemaker-quicksight/amazone-quicksight/</guid>
+      <description>Sử dụng Amazon QuickSight để tạo dataset từ Athena Bước 1: Đăng ký dịch vụ Amazon QuickSight&#xA;Truy cập Amazon QuickSight Console. Nhấn vào Sign up for QuickSight và điền thông tin cần thiết để đăng ký tài khoản QuickSight. Bước 2: Kết nối Amazon QuickSight với Athena&#xA;Mở Amazon QuickSight: Sau khi đăng ký, mở QuickSight console. Chọn Manage data từ thanh điều hướng trên cùng. Nhấn vào New data set và chọn Athena làm nguồn dữ liệu.</description>
+    </item>
+  </channel>
+</rss>

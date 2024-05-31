@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Self Paced Labs on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+    <link>http://localhost:1313/chapter-ii/self-paced-labs/</link>
+    <description>Recent content in Self Paced Labs on Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 22:01:17 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/chapter-ii/self-paced-labs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thiết lập yêu cầu</title>
+      <link>http://localhost:1313/chapter-ii/self-paced-labs/set-order/</link>
+      <pubDate>Tue, 28 May 2024 22:01:17 +0700</pubDate>
+      <guid>http://localhost:1313/chapter-ii/self-paced-labs/set-order/</guid>
+      <description>Thiết lập yêu cầu&#xA;Thực hiện các bước sau trước khi khởi chạy mẫu CloudFormation nếu bạn muốn thiết lập trên tài khoản của riêng mình. Bỏ qua bước tiếp theo nếu bạn đang ở sự kiện AWS.&#xA;Tạo cặp khóa trong khu vực đã được cung cấp:&#xA;Cặp khóa, bao gồm khóa riêng và khóa công khai, là một bộ thông tin xác thực bảo mật dùng để chứng minh danh tính của bạn khi kết nối với một instance.</description>
+    </item>
+    <item>
+      <title>Triển khai mẫu CloudFormation</title>
+      <link>http://localhost:1313/chapter-ii/self-paced-labs/cloud-formation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/chapter-ii/self-paced-labs/cloud-formation/</guid>
+      <description>Triển khai mẫu CloudFormation để tạo cơ sở hạ tầng cơ bản nếu bạn xây dựng nó trên tài khoản của riêng mình.&#xA;Bước 1: Tải về mẫu Cloudformation cf-360view.yaml: Bấm chuột phải vào đây và lưu như 1 file. Bước 2: Mở AWS Cloudformation stack creation và upload file mẫu. Bước 3: Chọn Next và điền các thông số:&#xA;Stack name: c360view Network Configuration: Nên deploy đến VPC nào?: Default VPC (172.</description>
+    </item>
+  </channel>
+</rss>

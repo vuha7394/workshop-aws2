@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.124.1">
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Trực quan hoá với Quicksight :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
+
+    
+    <link href="/css/nucleus.css?1717170140" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717170140" rel="stylesheet">
+    <link href="/css/hybrid.css?1717170140" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717170140" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717170140" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717170140" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717170140" rel="stylesheet">
+    <link href="/css/theme.css?1717170140" rel="stylesheet">
+    <link href="/css/tabs.css?1717170140" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717170140" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1717170140"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/chapter-vi/amazon-sagemaker-quicksight/amazon-sagemaker/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href='/'>
+  
+  <img src="/images/logo/aws-workshop.png">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1717170140"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717170140"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1717170140"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-i/" title="Giới thiệu workshop" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-i/">
+          <b>🛠 </b>Giới thiệu workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-i/gioi-thieu/" title="Giới thiệu" class="dd-item ">
+        <a href="/chapter-i/gioi-thieu/">
+        Giới thiệu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/" title="Làm thế nào để bắt đầu?" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/">
+          <b>1. </b>Làm thế nào để bắt đầu?
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/self-paced-labs/" title="Self Paced Labs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/self-paced-labs/">
+          Self Paced Labs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/set-order/" title="Thiết lập yêu cầu" class="dd-item ">
+        <a href="/chapter-ii/self-paced-labs/set-order/">
+        Thiết lập yêu cầu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-ii/self-paced-labs/cloud-formation/" title="Triển khai mẫu CloudFormation" class="dd-item ">
+        <a href="/chapter-ii/self-paced-labs/cloud-formation/">
+        Triển khai mẫu CloudFormation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-ii/set-order/" title="" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-ii/set-order/">
+          
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/" title="Tải dữ liệu và Điều phối" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/">
+          <b>2. </b>Tải dữ liệu và Điều phối
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-table-definitions/" title="Xây dựng Định nghĩa Bảng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-table-definitions/">
+          Xây dựng Định nghĩa Bảng
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/build-lake-formation/" title="Thiết lập Lake Formation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/build-lake-formation/">
+          Thiết lập Lake Formation
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/connect-database/" title="Kết nối tới Database" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/connect-database/">
+          Kết nối tới Database
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/export-data/" title="Truy xuất dữ liệu từ các nguồn" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/export-data/">
+          Truy xuất dữ liệu từ các nguồn
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iii/use-glue-jobs/" title="Sử dụng Glue Jobs" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iii/use-glue-jobs/">
+          Sử dụng Glue Jobs
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/" title="Chuẩn bị dữ liệu (Data Preparation)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/">
+          <b>3. </b>Chuẩn bị dữ liệu (Data Preparation)
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/query-athena/" title="Truy vấn với Athena" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/query-athena/">
+          Truy vấn với Athena
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-iv/step-functions/" title="" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-iv/step-functions/">
+          
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-csv-parquet/" title="" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-csv-parquet/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-iv/step-functions/convert-raw-data/" title="" class="dd-item ">
+        <a href="/chapter-iv/step-functions/convert-raw-data/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-dynamodb/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-dynamodb/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/amazon-emr/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/amazon-emr/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/run-convert/" title="Chuyển đổi nâng cao" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/run-convert/">
+        <b>4. </b>Chuyển đổi nâng cao
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-v/amazon-emr/set-lake-rule/" title="Chuyển đổi nâng cao" class="dd-item ">
+        <a href="/chapter-v/amazon-emr/set-lake-rule/">
+        <b>4. </b>Chuyển đổi nâng cao
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/glue-crawler/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/glue-crawler/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-v/pyspark-glue/" title="Chuyển đổi nâng cao" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-v/pyspark-glue/">
+          <b>4. </b>Chuyển đổi nâng cao
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vi/" title="Trực quan hoá với Quicksight" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chapter-vi/">
+          <b>5. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vi/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/chapter-vi/amazon-sagemaker-quicksight/">
+          <b>5. </b>Trực quan hoá với Quicksight
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vi/amazon-sagemaker-quicksight/amazon-sagemaker/" title="Trực quan hoá với Quicksight" class="dd-item active">
+        <a href="/chapter-vi/amazon-sagemaker-quicksight/amazon-sagemaker/">
+        <b>5. </b>Trực quan hoá với Quicksight
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/chapter-vi/amazon-sagemaker-quicksight/amazone-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item ">
+        <a href="/chapter-vi/amazon-sagemaker-quicksight/amazone-quicksight/">
+        <b>5. </b>Trực quan hoá với Quicksight
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-vii/" title="Độ trễ thấp trong việc cung cấp cái nhìn 360 độ cho API và ứng dụng" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-vii/">
+          <b>6. </b>Độ trễ thấp trong việc cung cấp cái nhìn 360 độ cho API và ứng dụng
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/chapter-viii/" title="Cleanup - Chỉ nếu bạn sử dụng tài khoản của riêng bạn" class="dd-item
+        
+        
+        
+        ">
+      <a href="/chapter-viii/">
+          <b>7. </b>Cleanup - Chỉ nếu bạn sử dụng tài khoản của riêng bạn
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> by Sweetsica && HaLazy
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</a> > <a href='/chapter-vi/'>Trực quan hoá với Quicksight</a> > <a href='/chapter-vi/amazon-sagemaker-quicksight/'>Trực quan hoá với Quicksight</a> > Trực quan hoá với Quicksight
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+<h2 id="5-trực-quan-hoá-với-quicksight">5. Trực quan hoá với Quicksight</h2>
+<p>Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng <a href="https://aws.amazon.com/quicksight/?nc1=h_ls">Amazon Quicksight</a>. Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc:
+<img src="/images/assets/160.png" alt="360 customer view">
+Bước 1: Đăng ký dịch vụ Amazon Quicksight.<br>
+Nếu bạn chưa có tài khoản Amazon Quicksight được kích hoạt trong tài khoản AWS của bạn, làm theo các bước sau <a href="https://www.google.com/url?q=https://docs.aws.amazon.com/quicksight/latest/user/setup-new-quicksight-account.html&amp;sa=D&amp;source=docs&amp;ust=1716835727056335&amp;usg=AOvVaw2jemETLlPbWH9UrXj9Ptfk">đây</a>.<br>
+Bước 2: Đến <a href="https://quicksight.aws.amazon.com/sn/start">Quicksight console</a> Bạn cần đến vùng của bạn để thiết lập này.<br>
+<img src="/images/assets/161.png" alt="360 customer view">
+Bước 3: Kiểm tra tài khoản của bạn và nhấp vào Sign UP for Quicksight<br>
+<img src="/images/assets/162.png" alt="360 customer view">
+Bước 4: Nhập thông tin của bạn</p>
+<ul>
+<li>Thay đổi vùng của bạn (trong trường hợp của tôi là Oregon) - làm điều này đầu tiên</li>
+<li>Email của bạn</li>
+<li>Tên Tài khoản Quicksight: ví dụ tên của bạn.
+<img src="/images/assets/163.png" alt="360 customer view">
+Bước 5: Chọn S3</li>
+<li>Chọn S3: các bucket log, Analytics, Stage và Raw
+<img src="/images/assets/164.png" alt="360 customer view">
+<img src="/images/assets/165.png" alt="360 customer view">
+Bước 6: Kiểm tra Athena.<br>
+<img src="/images/assets/166.png" alt="360 customer view">
+If you use another bucket for Athena results, please add it to your selection.<br>
+Bước 7: Bấm Finish.<br>
+<img src="/images/assets/167.png" alt="360 customer view">
+<img src="/images/assets/168.png" alt="360 customer view">
+<img src="/images/assets/169.png" alt="360 customer view">
+Click in go quicksight and check the news about quicksight and then click in Close<br>
+<img src="/images/assets/170.png" alt="360 customer view">
+P/S: Kiểm tra xem bạn có ở đúng vị trí không, trên người dùng ở góc trên bên phải.<br>
+<img src="/images/assets/171.png" alt="360 customer view">
+Bước 8: Click on Datasets -&gt; New dataset.<br>
+<img src="/images/assets/172.png" alt="360 customer view">
+Bước 9: Chọn Athena cho nguồn Data.<br>
+<img src="/images/assets/173.png" alt="360 customer view">
+Bước 10: Tạo nguồn dữ liệu Athena mới.<br>
+Tên nguồn dữ liệu: c360. Để Athena workgroup là primary, và nhấp vào Tạo nguồn dữ liệu.<br>
+<img src="/images/assets/174.png" alt="360 customer view">
+Bước 11: Chọn bảng.<br>
+Cơ sở dữ liệu: chứa các bảng dữ liệu: c360view_analytics<br>
+Bảng: chứa dữ liệu bạn có thể trực quan hóa: ví dụ như c360_analytics<br>
+<img src="/images/assets/175.png" alt="360 customer view">
+Nhấp vào Chọn.<br>
+Bước 12: Chọn Truy vấn trực tiếp dữ liệu của bạn -&gt; Trực quan hóa.<br>
+<img src="/images/assets/176.png" alt="360 customer view">
+Bước 15: Chọn Bảng tương tác và đóng gợi ý của Amazon Q.<br>
+<img src="/images/assets/177.png" alt="360 customer view">
+<img src="/images/assets/178.png" alt="360 customer view">
+Bước 13: Xây dựng bảng điều khiển của riêng bạn<br>
+Từ danh sách trường, chọn customer và ngành<br>
+Từ loại trực quan, chọn biểu đồ tròn<br>
+<img src="/images/assets/179.png" alt="360 customer view">
+Bước 14: Nhấp vào + Thêm, sau đó nhấp vào Thêm trực quan mới.<br>
+<img src="/images/assets/180.png" alt="360 customer view">
+Bước 15: Chọn các trường sau.</li>
+<li>khu vực</li>
+<li>doanh số</li>
+<li>Loại trực quan là biểu đồ thanh dọc
+Bước 16: Nhấp vào Field wells để kiểm tra mọi thứ có ở đúng vị trí không.<br>
+<img src="/images/assets/181.png" alt="360 customer view">
+Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+            </div> 
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/chapter-vi/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/chapter-vi/amazon-sagemaker-quicksight/amazone-quicksight/" title="Trực quan hoá với Quicksight" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1717170140"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717170140"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717170140"></script>
+    <script src="/js/jquery.sticky.js?1717170140"></script>
+    <script src="/js/featherlight.min.js?1717170140"></script>
+    <script src="/js/highlight.pack.js?1717170140"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717170140"></script>
+    <script src="/js/learn.js?1717170140"></script>
+    <script src="/js/hugo-learn.js?1717170140"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1717170140"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
