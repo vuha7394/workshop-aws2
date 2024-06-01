@@ -8,11 +8,11 @@ weight = 1
 
 Một trường hợp rất phổ biến là các tổ chức thường xem xét khách hàng của mình từ các góc độ khác nhau, chẳng hạn như góc độ trung thành, xem xét các chỉ số như: số năm lịch sử mua hàng, tần suất tương tác, hoặc góc độ nhân khẩu học như giá trị vòng đời khách hàng hoặc thu nhập. Chúng tôi gọi chúng là các chiều dữ liệu, và chúng tôi sẽ kết hợp nhiều chiều về khách hàng của bạn để cung cấp cho bạn khả năng hiển thị nhiều góc độ cùng một lúc.
 
-![360 customer view](/images/assets/1.png)
+![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/1.png)
 
 **Sơ đồ cấu trúc workshop:** 
 
-![360 customer view](/images/assets/2.png)
+![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/2.png)
 
 **Kiến trúc Data Lake:**
 + **Truy xuất dữ liệu:** AWS Lake Formation tự động di chuyển dữ liệu từ cơ sở dữ liệu quan hệ sang Amazon S3 bằng trình kết nối và tác vụ Glue.
