@@ -2,7 +2,6 @@
 title = 'Định nghĩa Bảng'
 date = 2024-05-28T22:01:17+07:00
 weight = 1
-chapter = true
 pre = "<b>2.1. </b>"
 +++
 

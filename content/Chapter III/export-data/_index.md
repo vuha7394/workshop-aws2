@@ -3,7 +3,6 @@ title = "Truy xuất dữ liệu từ các nguồn"
 date = 2024-05-28T22:01:17+07:00
 weight = 4
 pre = "<b>2.4. </b>"
-chapter = true
 +++
 
 ### Truy xuất dữ liệu từ các nguồn

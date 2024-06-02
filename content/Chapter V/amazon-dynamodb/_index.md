@@ -2,7 +2,6 @@
 title = 'Amazon DynamoDB'
 date = 2024-05-28T22:01:17+07:00
 weight = 4
-chapter = true
 pre = "<b>4.4. </b>"
 +++
 

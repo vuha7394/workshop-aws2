@@ -2,7 +2,6 @@
 title = 'Cấp quyền Lake cho vai trò EMR'
 date = 2024-05-28T22:01:17+07:00
 weight = 1
-chapter = true
 pre = "<b>4.3.1. </b>"
 +++
 

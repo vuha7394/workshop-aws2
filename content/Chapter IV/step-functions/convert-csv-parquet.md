@@ -2,7 +2,6 @@
 title = 'Thực hiện chuyển đổi từ định dạng CSV'
 date = 2024-05-28T22:01:17+07:00
 weight = 1
-chapter = true
 pre = "<b>3.1.1. </b>"
 +++
 

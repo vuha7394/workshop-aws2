@@ -2,7 +2,6 @@
 title = 'Truy vấn với Athena'
 date = 2024-05-28T22:01:17+07:00
 weight = 2
-chapter = true
 pre = "<b>3.2. </b>"
 +++
 

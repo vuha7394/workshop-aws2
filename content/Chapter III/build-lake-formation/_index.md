@@ -3,7 +3,6 @@ title = 'Thiết lập Lake Formation'
 date = 2024-05-28T22:01:17+07:00
 weight = 2
 pre = "<b>2.2. </b>"
-chapter = true
 +++
 
 ### Thiết lập Lake Formation

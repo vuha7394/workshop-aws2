@@ -2,7 +2,6 @@
 title = 'Độ trễ thấp cho API và ứng dụng'
 date = 2024-05-28T22:01:17+07:00
 weight = 7
-chapter = true
 pre = "<b>6. </b>"
 +++
 

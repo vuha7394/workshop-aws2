@@ -2,7 +2,6 @@
 title = 'Thực hiện chuyển đổi với các bảng dữ liệu thô'
 date = 2024-05-28T22:01:17+07:00
 weight = 2
-chapter = true
 pre = "<b>3.1.2. </b>"
 +++
 
