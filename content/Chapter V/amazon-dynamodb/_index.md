@@ -30,4 +30,4 @@ Sử dụng trình duyệt bucket để chọn vị trí ứng dụng.
 Bấm Add Step  
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/158.png) 
 Bước 5: Kiểm tra trạng thái công việc, từ đang chờ xử lý (pending) đến đang chạy (running).  
-![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/159.png)ç
+![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/159.png)
