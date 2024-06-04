@@ -7,6 +7,5 @@ pre = "<b>1. </b>"
 +++
 
 
-### Chương I
 
 # Bắt đầu xây dựng workshop

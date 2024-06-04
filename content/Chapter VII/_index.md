@@ -2,15 +2,12 @@
 title = 'Độ trễ thấp cho API và ứng dụng'
 date = 2024-05-28T22:01:17+07:00
 weight = 7
-chapter = true
 pre = "<b>6. </b>"
 +++
 
-### Chương VI
 
-# Độ trễ thấp trong việc cung cấp cái nhìn 360 độ cho API và ứng dụng  
 Truy vấn bảng Amazon DynamoDB với kết quả để làm nguồn cho các truy vấn độ trễ thấp từ các ứng dụng hoặc APIs của bạn.  
-![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/182.png) 
+![360 customer view](/images/assets/182.png) 
 Bước 1: Đến [Amazon DynamoDB console](https://us-west-2.console.aws.amazon.com/dynamodb/home?region=us-west-2#tables:selected=DDBc360view;tab=items).  
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/183.png) 
 Bước 2: Nhấp vào bảng DDBc360view mà bạn đã điền dữ liệu bằng một script Hive sử dụng cụm EMR của bạn, và nhấp vào nút Khám phá các mục bảng.  

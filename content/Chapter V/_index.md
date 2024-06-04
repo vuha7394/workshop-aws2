@@ -2,15 +2,12 @@
 title = 'Chuyển đổi nâng cao'
 date = 2024-05-28T22:01:17+07:00
 weight = 5
-chapter = true
 pre = "<b>4. </b>"
 +++
 
-### Chương IV
 
-# Chuyển đổi nâng cao
 Bây giờ bạn sẽ thực hiện các chuyển đổi nâng cao hơn bằng cách sử dụng AWS Glue job, đầu tiên là sử dụng python shell, sau đó với Pyspark  
-![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/115.png) 
+![360 customer view](/images/assets/115.png) 
 AWS Glue là một dịch vụ trích xuất, chuyển đổi và tải (ETL) được quản lý hoàn toàn, giúp dễ dàng chuẩn bị và tải dữ liệu của bạn để phân tích. Bạn có thể tạo và chạy một công việc ETL chỉ với vài cú nhấp chuột trong trình chỉnh sửa trực quan của AWS Glue.  
 Glue sẽ tạo mã ETL bằng Scala hoặc Python để trích xuất dữ liệu từ nguồn, chuyển đổi dữ liệu để khớp với lược đồ mục tiêu và tải nó vào mục tiêu. Bạn có thể chỉnh sửa, gỡ lỗi và kiểm tra mã này thông qua Console, trong IDE yêu thích của bạn hoặc bất kỳ sổ tay nào.  
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/116.png) 

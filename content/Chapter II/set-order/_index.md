@@ -38,5 +38,5 @@ Nhấp vào nhóm bảo mật có tên "c360view-RDS-Source" và thêm một quy
 Nhấp vào "Edit inbound rules" -> "add rule" -> tìm "All TCP" -> nguồn là nhóm bảo mật "c360view-RDS-Source":  
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/27.png)
 Kiểm tra kiến trúc này để xem bạn sẽ sử dụng gì trong workshop này. 
-![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/28.png)
+![360 customer view](/images/assets/28.png)
 Bấm nút "Next" để sang phần tiếp theo  

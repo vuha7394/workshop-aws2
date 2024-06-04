@@ -2,7 +2,6 @@
 title = 'Cleanup'
 date = 2024-05-28T22:01:17+07:00
 weight = 8
-chapter = true
 pre = "<b>7. </b>"
 +++
 

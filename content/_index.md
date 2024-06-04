@@ -5,6 +5,3 @@ weight = 5
 pre = "<b>I. </b>"
 +++
 
-### Giới thiệu workshop
-
-# Xây dựng Chân dung Khách hàng 360 độ với Amazon Services
