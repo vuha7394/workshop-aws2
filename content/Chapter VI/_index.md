@@ -7,7 +7,7 @@ pre = "<b>5. </b>"
 
 
 Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls). Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc: 
-![360 customer view](/images/assets/160.png) 
+![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/160.png) 
 Bước 1: Đăng ký dịch vụ Amazon Quicksight.  
 Nếu bạn chưa có tài khoản Amazon Quicksight được kích hoạt trong tài khoản AWS của bạn, làm theo các bước sau [đây](https://www.google.com/url?q=https://docs.aws.amazon.com/quicksight/latest/user/setup-new-quicksight-account.html&sa=D&source=docs&ust=1716835727056335&usg=AOvVaw2jemETLlPbWH9UrXj9Ptfk).  
 Bước 2: Đến [Quicksight console](https://quicksight.aws.amazon.com/sn/start) Bạn cần đến vùng của bạn để thiết lập này.  
