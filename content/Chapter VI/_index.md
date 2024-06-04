@@ -2,10 +2,13 @@
 title = 'Trực quan hoá với Quicksight'
 date = 2024-05-28T22:01:17+07:00
 weight = 6
+chapter = true
 pre = "<b>5. </b>"
 +++
 
-## 5. Trực quan hoá với Quicksight
+### Chương V
+
+# Trực quan hoá với Quicksight
 Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls). Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc: 
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/160.png) 
 Bước 1: Đăng ký dịch vụ Amazon Quicksight.  

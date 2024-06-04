@@ -12,20 +12,20 @@
     <title>Trực quan hoá với Quicksight :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -1003,65 +1003,66 @@
 
 
 
-	<h2 id="5-trực-quan-hoá-với-quicksight">5. Trực quan hoá với Quicksight</h2>
+	<h3 id="chương-v">Chương V</h3>
+<h1 id="trực-quan-hoá-với-quicksight">Trực quan hoá với Quicksight</h1>
 <p>Để khám phá dữ liệu bằng các bảng điều khiển, bạn có thể sử dụng <a href="https://aws.amazon.com/quicksight/?nc1=h_ls">Amazon Quicksight</a>. Chúng ta sẽ sử dụng dữ liệu đã được xử lý trước đó. Dưới đây là kiến trúc:
-<img src="/images/assets/160.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/160.png" alt="360 customer view">
 Bước 1: Đăng ký dịch vụ Amazon Quicksight.<br>
 Nếu bạn chưa có tài khoản Amazon Quicksight được kích hoạt trong tài khoản AWS của bạn, làm theo các bước sau <a href="https://www.google.com/url?q=https://docs.aws.amazon.com/quicksight/latest/user/setup-new-quicksight-account.html&amp;sa=D&amp;source=docs&amp;ust=1716835727056335&amp;usg=AOvVaw2jemETLlPbWH9UrXj9Ptfk">đây</a>.<br>
 Bước 2: Đến <a href="https://quicksight.aws.amazon.com/sn/start">Quicksight console</a> Bạn cần đến vùng của bạn để thiết lập này.<br>
-<img src="/images/assets/161.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/161.png" alt="360 customer view">
 Bước 3: Kiểm tra tài khoản của bạn và nhấp vào Sign UP for Quicksight<br>
-<img src="/images/assets/162.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/162.png" alt="360 customer view">
 Bước 4: Nhập thông tin của bạn</p>
 <ul>
 <li>Thay đổi vùng của bạn (trong trường hợp của tôi là Oregon) - làm điều này đầu tiên</li>
 <li>Email của bạn</li>
 <li>Tên Tài khoản Quicksight: ví dụ tên của bạn.
-<img src="/images/assets/163.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/163.png" alt="360 customer view">
 Bước 5: Chọn S3</li>
 <li>Chọn S3: các bucket log, Analytics, Stage và Raw
-<img src="/images/assets/164.png" alt="360 customer view">
-<img src="/images/assets/165.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/164.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/165.png" alt="360 customer view">
 Bước 6: Kiểm tra Athena.<br>
-<img src="/images/assets/166.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/166.png" alt="360 customer view">
 If you use another bucket for Athena results, please add it to your selection.<br>
 Bước 7: Bấm Finish.<br>
-<img src="/images/assets/167.png" alt="360 customer view">
-<img src="/images/assets/168.png" alt="360 customer view">
-<img src="/images/assets/169.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/167.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/168.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/169.png" alt="360 customer view">
 Click in go quicksight and check the news about quicksight and then click in Close<br>
-<img src="/images/assets/170.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/170.png" alt="360 customer view">
 P/S: Kiểm tra xem bạn có ở đúng vị trí không, trên người dùng ở góc trên bên phải.<br>
-<img src="/images/assets/171.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/171.png" alt="360 customer view">
 Bước 8: Click on Datasets -&gt; New dataset.<br>
-<img src="/images/assets/172.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/172.png" alt="360 customer view">
 Bước 9: Chọn Athena cho nguồn Data.<br>
-<img src="/images/assets/173.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/173.png" alt="360 customer view">
 Bước 10: Tạo nguồn dữ liệu Athena mới.<br>
 Tên nguồn dữ liệu: c360. Để Athena workgroup là primary, và nhấp vào Tạo nguồn dữ liệu.<br>
-<img src="/images/assets/174.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/174.png" alt="360 customer view">
 Bước 11: Chọn bảng.<br>
 Cơ sở dữ liệu: chứa các bảng dữ liệu: c360view_analytics<br>
 Bảng: chứa dữ liệu bạn có thể trực quan hóa: ví dụ như c360_analytics<br>
-<img src="/images/assets/175.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/175.png" alt="360 customer view">
 Nhấp vào Chọn.<br>
 Bước 12: Chọn Truy vấn trực tiếp dữ liệu của bạn -&gt; Trực quan hóa.<br>
-<img src="/images/assets/176.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/176.png" alt="360 customer view">
 Bước 15: Chọn Bảng tương tác và đóng gợi ý của Amazon Q.<br>
-<img src="/images/assets/177.png" alt="360 customer view">
-<img src="/images/assets/178.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/177.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/178.png" alt="360 customer view">
 Bước 13: Xây dựng bảng điều khiển của riêng bạn<br>
 Từ danh sách trường, chọn customer và ngành<br>
 Từ loại trực quan, chọn biểu đồ tròn<br>
-<img src="/images/assets/179.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/179.png" alt="360 customer view">
 Bước 14: Nhấp vào + Thêm, sau đó nhấp vào Thêm trực quan mới.<br>
-<img src="/images/assets/180.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/180.png" alt="360 customer view">
 Bước 15: Chọn các trường sau.</li>
 <li>khu vực</li>
 <li>doanh số</li>
 <li>Loại trực quan là biểu đồ thanh dọc
 Bước 16: Nhấp vào Field wells để kiểm tra mọi thứ có ở đúng vị trí không.<br>
-<img src="/images/assets/181.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/181.png" alt="360 customer view">
 Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
 </ul>
 
@@ -1636,19 +1637,19 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

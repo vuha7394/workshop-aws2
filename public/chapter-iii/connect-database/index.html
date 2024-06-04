@@ -12,20 +12,20 @@
     <title>Kết nối tới Database :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#kết-nối-tới-database">Kết nối tới Database</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Kết nối tới Database
+            </h1>
           
 
         
@@ -1014,17 +1034,17 @@
 <dt>Tạo một kết nối cho cơ sở dữ liệu quan hệ làm nguồn.</dt>
 <dt>Bạn sẽ cần kết nối này để tạo một công việc AWS Glue và chúng tôi sẽ sử dụng thông tin đăng nhập từ AWS Secrets Manager để kiểm tra tên người dùng/mật khẩu.</dt>
 <dt>Vì vậy, hãy vào AWS Secrets Manager và nhấp vào &ldquo;c360view-secret&rdquo;.</dt>
-<dt><img src="/images/assets/49.png" alt="360 customer view"></dt>
+<dt><img src="https://vuha7394.github.io/workshop-aws2/images/assets/49.png" alt="360 customer view"></dt>
 <dt>Nhấp vào &ldquo;Retrieve secret value&rdquo; để lấy thông tin đăng nhập</dt>
-<dt><img src="/images/assets/50.png" alt="360 customer view"></dt>
+<dt><img src="https://vuha7394.github.io/workshop-aws2/images/assets/50.png" alt="360 customer view"></dt>
 <dt>Lưu thông tin đăng nhập vào trình soạn thảo văn bản của bạn, bạn sẽ cần mật khẩu này trong các bước tiếp theo:</dt>
-<dt><img src="/images/assets/51.png" alt="360 customer view"></dt>
+<dt><img src="https://vuha7394.github.io/workshop-aws2/images/assets/51.png" alt="360 customer view"></dt>
 <dt>Bước 1: Đến <a href="https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=connections">AWS Glue</a> -&gt; Data catalog -&gt; Connections, và kiểm tra xem có kết nối tên &ldquo;sourcemf&rdquo; tồn tại hay không. Nếu có, chuyển đến bước 7 để kiểm tra kết nối</dt>
 <dd></dd>
 </dl>
-<p><img src="/images/assets/52.png" alt="360 customer view">
+<p><img src="https://vuha7394.github.io/workshop-aws2/images/assets/52.png" alt="360 customer view">
 Nếu bạn không thấy tên kết nối &ldquo;sourcemf&rdquo;, nhấp vào &ldquo;create connection&rdquo;, chọn &ldquo;Amazon Aurora&rdquo; và sau đó nhấp vào &ldquo;Next&rdquo;.<br>
-<img src="/images/assets/53.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/53.png" alt="360 customer view">
 Bước 2: Thiết lập quyền truy cập, chọn Instance sourcemf của bạn:</p>
 <ul>
 <li>Instance: Giống như trong secrets manager -&gt; username</li>
@@ -1036,25 +1056,25 @@ Network Options:<br>
 VPC: Giống như cơ sở dữ liệu</li>
 <li>Subnet: Giống như cơ sở dữ liệu</li>
 <li>Security Group: Tên: c360view-c360-Access và c360view-RDS-Source
-<img src="/images/assets/54.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/54.png" alt="360 customer view">
 Bấm Next.<br>
 Bước 3: Đặt tên kết nối của bạn là &ldquo;sourcemf&rdquo;<br>
-<img src="/images/assets/55.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/55.png" alt="360 customer view">
 Bấm Next.<br>
 Bước 4: Kiểm tra lại các thông số và bấm tạo kết nối<br>
-<img src="/images/assets/56.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/56.png" alt="360 customer view">
 Bước 5: Kiểm tra nếu kết nối của bạn xuất hiện<br>
-<img src="/images/assets/57.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/57.png" alt="360 customer view">
 Bước 6: Bấm vào kết nối theo mũi tên<br>
-<img src="/images/assets/58.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/58.png" alt="360 customer view">
 Bước 7: Kiểm tra kết nối: Chọn &ldquo;sourcemf&rdquo; -&gt; bấm Test Connection<br>
-<img src="/images/assets/59.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/59.png" alt="360 customer view">
 Chọn IAM Role and xác nhận<br>
 IAM role: Glue-role-c360view<br>
-<img src="/images/assets/60.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/60.png" alt="360 customer view">
 Bước 8: Bạn sẽ thấy kết nối sourcemf thành công:<br>
-<img src="/images/assets/61.png" alt="360 customer view">
-<img src="/images/assets/62.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/61.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/62.png" alt="360 customer view">
 Nếu có lỗi hãy kiểm tra kỹ lại 1 lần nữa.<br>
 Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
 </ul>
@@ -1067,8 +1087,6 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1634,19 +1652,19 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

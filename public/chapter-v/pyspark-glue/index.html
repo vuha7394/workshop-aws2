@@ -12,20 +12,20 @@
     <title>PySpark - Glue :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#pyspark---glue">PySpark - Glue</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              PySpark - Glue
+            </h1>
           
 
         
@@ -1012,35 +1032,35 @@
 	<h3 id="pyspark---glue">PySpark - Glue</h3>
 <p>Bây giờ bạn sẽ thực hiện các chuyển đổi nâng cao hơn bằng cách sử dụng các công việc AWS Glue.<br>
 Bước 1: Đi đến <a href="https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#etl:tab=jobs">AWS Glue jobs console</a>, chọn n1_c360_dispositions, công việc Pyspark.<br>
-<img src="/images/assets/123.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/123.png" alt="360 customer view">
 Chuyển đổi bên trong công việc này thực hiện một phép nối giữa 3 bảng, ngân hàng chung, tài khoản và thẻ, để tính toán loại giao dịch và thông tin thu nhận.<br>
 Bước 2: Nhấp vào Chỉnh sửa công việc.</p>
 <ul>
 <li>Nếu sử dụng giao diện điều khiển mới, bạn có thể chọn công việc và đi đến tab Chi tiết công việc.</li>
 <li>Đảm bảo bạn chọn ngôn ngữ Python 3, nếu sử dụng giao diện điều khiển mới.</li>
 <li>Thư mục tạm thời sẽ được thiết lập trong các thuộc tính nâng cao.
-<img src="/images/assets/124.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/124.png" alt="360 customer view">
 Bước 3: Thay đổi Glue version sang Glue Version 4.0 - Supports spark 3.3, Python 3.<br>
-<img src="/images/assets/125.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/125.png" alt="360 customer view">
 Bước 4: Nhấp vào thuộc tính nâng cao, chọn bucket S3 stage của bạn c360view-us-west-2-your_account_id-log + &lsquo;/tmp/&rsquo; làm thư mục tạm thời.<br>
-<img src="/images/assets/126.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/126.png" alt="360 customer view">
 Bước 5: Bấm Save n1_c360_dispositions và chạy công việc.
-<img src="/images/assets/127.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/127.png" alt="360 customer view">
 Bước 6: Chờ hoàn thành. Quá trình này mất từ 2-5 phút để hoàn thành.
-<img src="/images/assets/128.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/128.png" alt="360 customer view">
 Bước 7: Kiểm tra kịch bản và nhật ký.
-<img src="/images/assets/129.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/129.png" alt="360 customer view">
 Lưu ý rằng trong kịch bản Python này, kết quả truy vấn từ Amazon Athena được chuyển đổi thành khung dữ liệu Pandas và sau đó kết quả từ chuyển đổi Pandas thành các tệp parquet trong Amazon S3 bằng cách sử dụng hoạt động ghi của spark.<br>
 Bước 8: Bây giờ chọn công việc Jobcust360etlmftrans, một công việc Pyspark khác, Hành động và Chỉnh sửa công việc.<br>
-<img src="/images/assets/130.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/130.png" alt="360 customer view">
 Bước 9: Thay đổi phiên bản Glue thành Glue Version 4.0 - Hỗ trợ spark 3.3, Python 3 và chọn bucket S3 stage của bạn c360view-us-west-2-your_account_id-log + &lsquo;/tmp/&rsquo; làm thư mục tạm thời.<br>
-<img src="/images/assets/131.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/131.png" alt="360 customer view">
 Lưu.<br>
 Bước 10: Trong công việc Jobcust360etlmftrans, nhấp vào lưu, sau đó nhấp vào Chạy công việc.<br>
-<img src="/images/assets/132.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/132.png" alt="360 customer view">
 Bước 11: Nhấp vào Chạy và chờ hoàn thành. Quá trình này sẽ mất từ 2-5 phút.<br>
-<img src="/images/assets/133.png" alt="360 customer view">
-<img src="/images/assets/134.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/133.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/134.png" alt="360 customer view">
 Trong kịch bản pyspark này, chúng ta đang thực hiện một số phép tổng hợp với các giao dịch từ cơ sở dữ liệu quan hệ theo account_id trong 3 tháng gần đây và 6 tháng gần đây. Để thực hiện điều này, chúng ta đã sử dụng khung động AWS Glue.</li>
 </ul>
 
@@ -1052,8 +1072,6 @@ Trong kịch bản pyspark này, chúng ta đang thực hiện một số phép 
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1616,19 +1634,19 @@ Trong kịch bản pyspark này, chúng ta đang thực hiện một số phép 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

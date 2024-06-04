@@ -12,20 +12,20 @@
     <title>Sử dụng Glue Jobs :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#sử-dụng-glue-jobs">Sử dụng Glue Jobs</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Sử dụng Glue Jobs
+            </h1>
           
 
         
@@ -1013,63 +1033,63 @@
 <p>Tạo một Glue Job để lấy dữ liệu từ cơ sở dữ liệu quan hệ giao dịch của bạn.<br>
 Kiểm tra trong các <a href="https://us-west-2.console.aws.amazon.com/events/home?region=us-west-2#/rules">Eventbridge Rules</a> của bạn xem bạn đã khởi động c360-ScheduledIngestionPostgresql- chưa, vì nó được tạo sau nên có thể bạn chưa khởi động nó.<br>
 Bước 1: Nếu Quy tắc này chưa được bật (“màu xanh”), vui lòng bật nó ngay bằng cách nhấp vào Actions.<br>
-<img src="/images/assets/70.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/70.png" alt="360 customer view">
 Đi tới Glue Console, tạo và chạy một JDBC Crawler cho cơ sở dữ liệu.<br>
 Bước 1: Thêm định nghĩa bảng <a href="https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=crawlers">Create Crawler</a>
-<img src="/images/assets/71.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/71.png" alt="360 customer view">
 Bước 2: Nhập thuộc tính của trình thu thập dữ liệu (crawler)<br>
 Crawler name: 3-sourcemf<br>
-<img src="/images/assets/72.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/72.png" alt="360 customer view">
 Bấm next<br>
 Bước 3: Chọn nguồn data, click &ldquo;not yet&rdquo; và &ldquo;add a data source&rdquo;<br>
-<img src="/images/assets/73.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/73.png" alt="360 customer view">
 Bước 4: Thêm một nguồn dữ liệu mới</p>
 <ul>
 <li>Chọn kho dữ liệu: JDBC</li>
 <li>Kết nối cơ sở dữ liệu: sourcemf</li>
 <li>Đường dẫn nguồn: sourcemf/%</li>
 <li>Sau đó click  &ldquo;Thêm 1 JDBC nguồn data&rdquo;:
-<img src="/images/assets/74.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/74.png" alt="360 customer view">
 Bước 5: Chọn nguồn data được tạo và bấm next<br>
-<img src="/images/assets/75.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/75.png" alt="360 customer view">
 Step 6: Chọn Glue-role-c360view cho IAM role<br>
-<img src="/images/assets/76.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/76.png" alt="360 customer view">
 Bước 7: Thiết lập đầu ra và lập lịch trình<br>
 Database: c360view_raw Frequency: Run on Demand
-<img src="/images/assets/77.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/77.png" alt="360 customer view">
 Bước 8: Kiểm tra lại và tạo crawler<br>
-<img src="/images/assets/78.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/78.png" alt="360 customer view">
 Bấm create crawler<br>
 Bước 9: Kiểm tra nếu tạo thành công crawler Finish<br>
-<img src="/images/assets/79.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/79.png" alt="360 customer view">
 Bước 10: Chạy crawler<br>
-<img src="/images/assets/80.png" alt="360 customer view">
-<img src="/images/assets/81.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/80.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/81.png" alt="360 customer view">
 Chờ cho trình thu thập dữ liệu hoàn thành. Quá trình này sẽ mất từ 2-5 phút để hoàn tất và thêm một bảng mới:<br>
-<img src="/images/assets/82.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/82.png" alt="360 customer view">
 <strong>Tạo một Glue Job</strong><br>
 Bước 1: Tạo một Glue Job để nhập dữ liệu từ cơ sở dữ liệu quan hệ. Đi tới <a href="https://us-west-2.console.aws.amazon.com/gluestudio/home?region=us-west-2#/jobss">Glue -&gt; ETL jobs -&gt; Visual ETL</a> và chọn &ldquo;Visual ETL&rdquo;:<br>
-<img src="/images/assets/83.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/83.png" alt="360 customer view">
 Chọn nguồn: Relational DB<br>
-<img src="/images/assets/84.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/84.png" alt="360 customer view">
 Bước 2: Thiết lập tên Job và Data Source</li>
 <li>Name: 1-sourcemf</li>
 <li>JDBC Source: JDBC Connection details</li>
 <li>Connection Name: sourcemf</li>
 <li>Table: transactions
-<img src="/images/assets/85.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/85.png" alt="360 customer view">
 Sau đó click: IAM Role: Glue-role-c360view và chờ Data preview<br>
-<img src="/images/assets/86.png" alt="360 customer view">
-<img src="/images/assets/87.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/86.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/87.png" alt="360 customer view">
 Giữ nguyên tùy chọn visual dag.<br>
 Bước 3: Thiết lập chuyển đổi<br>
 Nhấp vào + -&gt; Transforms -&gt; Change schema<br>
-<img src="/images/assets/88.png" alt="360 customer view">
-<img src="/images/assets/89.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/88.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/89.png" alt="360 customer view">
 Thay đổi loại ngày data:</li>
 <li>date: Target key - date sang Data type - string (thay ngày từ  timestamp sang string)
-<img src="/images/assets/90.png" alt="360 customer view">
-<img src="/images/assets/91.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/90.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/91.png" alt="360 customer view">
 Bấm nút +<br>
 Bước 4: Thiết lập Data target<br>
 Chọn Targets:<br>
@@ -1084,21 +1104,21 @@ Target: Amazon S3</li>
 <li>Data Catalog - Tạo một bảng trong Data Catalog và trong các lần chạy tiếp theo, cập nhật lược đồ và thêm các phân vùng mới.</li>
 <li>Database: c360view_raw</li>
 <li>Table name: sourcemf_sourcemf_public_transactions
-<img src="/images/assets/92.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/92.png" alt="360 customer view">
 Bước 5: Thay tên công việc thành 1-sourcemf. Đặt tên công việc là sourcemf<br>
-<img src="/images/assets/93.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/93.png" alt="360 customer view">
 Bước 6: Lưu lại công việc<br>
 Bấm Save, sau đó bấm Job details
-<img src="/images/assets/94.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/94.png" alt="360 customer view">
 Bước 7: Job Details Đưa thông tin này vào công việc:
 IAM Role: Glue-role-c360view
-<img src="/images/assets/95.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/95.png" alt="360 customer view">
 Sau đó lưu lại, bấm Save<br>
 Bước 8: Chạy công việc<br>
-<img src="/images/assets/96.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/96.png" alt="360 customer view">
 Bước 9: Chờ công việc hoàn thành<br>
 Quá trình này mất từ 2-5 phút để hoàn tất. Kiểm tra trạng thái công việc, nó cần ở trạng thái &ldquo;Ready&rdquo;:<br>
-<img src="/images/assets/97.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/97.png" alt="360 customer view">
 Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
 </ul>
 
@@ -1110,8 +1130,6 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1677,19 +1695,19 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

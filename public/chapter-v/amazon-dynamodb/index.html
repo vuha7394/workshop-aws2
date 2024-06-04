@@ -12,20 +12,20 @@
     <title>Amazon DynamoDB :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#amazon-dynamodb">Amazon DynamoDB</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Amazon DynamoDB
+            </h1>
           
 
         
@@ -1012,30 +1032,30 @@
 	<h3 id="amazon-dynamodb">Amazon DynamoDB</h3>
 <p>Điền dữ liệu vào bảng Amazon DynamoDB với kết quả để làm nguồn cho các truy vấn độ trễ thấp từ ứng dụng hoặc API của bạn.<br>
 Amazon DynamoDB là một cơ sở dữ liệu key-value và document cung cấp hiệu suất trong khoảng mili giây đơn lẻ ở bất kỳ quy mô nào. Đây là một cơ sở dữ liệu được quản lý hoàn toàn, đa vùng, đa chủ, bền vững với bảo mật tích hợp, sao lưu và khôi phục, và bộ nhớ đệm trong bộ nhớ cho các ứng dụng quy mô internet. DynamoDB có thể xử lý hơn 10 nghìn tỷ yêu cầu mỗi ngày và có thể hỗ trợ đỉnh điểm hơn 20 triệu yêu cầu mỗi giây.<br>
-<img src="/images/assets/153.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/153.png" alt="360 customer view">
 Chúng ta sẽ sử dụng một script Hive để thực hiện truy vấn trên bảng nguồn và lưu nó vào DynamoDB.<br>
 Bước 1: Đến <a href="https://us-west-2.console.aws.amazon.com/elasticmapreduce/home?region=us-west-2">EMR console</a>.
-<img src="/images/assets/154.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/154.png" alt="360 customer view">
 Bước 2: Bấm c360cluster.<br>
-<img src="/images/assets/155.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/155.png" alt="360 customer view">
 Bước 3: Bấm tab Steps.<br>
-<img src="/images/assets/156.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/156.png" alt="360 customer view">
 Bước 4: Bấm thêm bước.</p>
 <ul>
 <li>Step type: Hive program</li>
 <li>Name: loadtodynamodb</li>
 <li>Hive script location: s3://<strong>your_stage_bucket</strong>/library/c360dynamodbload.q
 Sử dụng trình duyệt bucket để chọn vị trí ứng dụng.<br>
-<img src="/images/assets/157.png" alt="360 customer view"></li>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/157.png" alt="360 customer view"></li>
 <li>Input S3 location: leave blank</li>
 <li>Output s3 location: leave blank</li>
 <li>Arguments: leave blank</li>
 <li>Action on failure: continue<br>
 Bấm Add Step<br>
-<img src="/images/assets/158.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/158.png" alt="360 customer view">
 Bước 5: Kiểm tra trạng thái công việc, từ đang chờ xử lý (pending) đến đang chạy (running).<br>
-<img src="/images/assets/159.png" alt="360 customer view">
-<img src="/images/assets/160.png" alt="360 customer view"></li>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/159.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/160.png" alt="360 customer view"></li>
 </ul>
 
 
@@ -1046,8 +1066,6 @@ Bước 5: Kiểm tra trạng thái công việc, từ đang chờ xử lý (pen
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1613,19 +1631,19 @@ Bước 5: Kiểm tra trạng thái công việc, từ đang chờ xử lý (pen
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

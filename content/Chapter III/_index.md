@@ -8,7 +8,7 @@ pre = "<b>2. </b>"
 
 ### Chương II
 
-## 2. Tải dữ liệu và Điều phối
+# Tải dữ liệu và Điều phối
 Bạn sẽ sử dụng các hàm AWS Lambda để tạo dữ liệu thông qua các bộ lập lịch trong Amazon CloudWatch, AWS Lake Formation để lập danh mục, tải dữ liệu vào và quản lý hồ dữ liệu của bạn.  
 ![360 customer view](https://vuha7394.github.io/workshop-aws2/images/assets/29.png)
 Bạn sẽ tạo ra một số dữ liệu tổng hợp bằng cách sử dụng các hàm AWS Lambda được lên lịch.  

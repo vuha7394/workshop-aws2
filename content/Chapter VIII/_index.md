@@ -2,10 +2,13 @@
 title = 'Cleanup'
 date = 2024-05-28T22:01:17+07:00
 weight = 8
+chapter = true
 pre = "<b>7. </b>"
 +++
 
-## 7. Cleanup tài khoản
+### Chương VII
+
+# Cleanup tài khoản
 
 Sau khi tương tác với môi trường, để dọn dẹp các tài nguyên:  
 + Tắt hoặc xóa tất cả các [CloudWatch schedules](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#cw:dashboard=Home) đã tạo để tránh tạo dữ liệu mới;

@@ -12,20 +12,20 @@
     <title>Định nghĩa Bảng :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#xây-dựng-định-nghĩa-bảng">Xây dựng Định nghĩa Bảng</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Định nghĩa Bảng
+            </h1>
           
 
         
@@ -1011,23 +1031,23 @@
 
 	<h3 id="xây-dựng-định-nghĩa-bảng">Xây dựng Định nghĩa Bảng</h3>
 <p>Chạy trình thu thập dữ liệu (crawler) trong AWS Glue Console để lấy định nghĩa bảng từ bucket raw của bạn. Trình thu thập dữ liệu truy cập kho dữ liệu, trích xuất siêu dữ liệu và tạo định nghĩa bảng trong AWS Glue Data Catalog. Bảng điều khiển Crawlers trong AWS Glue hiển thị trạng thái và số liệu từ lần chạy cuối của trình thu thập dữ liệu.<br>
-<img src="/images/assets/31.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/31.png" alt="360 customer view">
 Bước 1: Đến AWS <a href="https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=crawlers">Glue Crawlers</a> :<br>
-<img src="/images/assets/32.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/32.png" alt="360 customer view">
 Tạo cơ sở dữ liệu và định nghĩa bảng với Glue Crawler<br>
 Bước 2: Nhấp vào 1-Crawler360rawdata và chạy trình thu thập dữ liệu (Run crawler). Trình thu thập dữ liệu này sẽ đọc các tệp trong bucket raw của bạn và tạo các định nghĩa bảng cho từng lược đồ bảng cho cơ sở dữ liệu c360view-raw.<br>
-<img src="/images/assets/33.png" alt="360 customer view"><br>
-<img src="/images/assets/34.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/33.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/34.png" alt="360 customer view"><br>
 Khi hoàn thành bạn sẽ thấy 5 bảng được tạo ra.<br>
 Bước 3: Chọn 2-Crawlerc360visitorid và chạy.<br>
-<img src="/images/assets/35.png" alt="360 customer view"><br>
-<img src="/images/assets/36.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/35.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/36.png" alt="360 customer view"><br>
 Bước 4: Bạn sẽ thấy 5 bảng được thêm bởi trình thu thập dữ liệu 1-Crawler360rawdata.<br>
-<img src="/images/assets/37.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/37.png" alt="360 customer view"><br>
 Bạn sẽ thấy một bảng được thêm bởi trình thu thập dữ liệu 2-Crawlerc360visitorid.
-<img src="/images/assets/38.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/38.png" alt="360 customer view"><br>
 Bước 5: Bạn có thể xác minh định nghĩa bảng bằng cách vào Database -&gt; Tables trong cùng bảng điều khiển.<br>
-<img src="/images/assets/39.png" alt="360 customer view"><br>
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/39.png" alt="360 customer view"><br>
 Glue Crawler đã tạo cơ sở dữ liệu c360view_raw và c360view_stage cùng 6 định nghĩa bảng..<br>
 Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
 
@@ -1039,8 +1059,6 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1603,19 +1621,19 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

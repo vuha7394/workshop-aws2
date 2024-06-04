@@ -12,20 +12,20 @@
     <title>Truy xuất dữ liệu từ các nguồn :: Xây dựng Chân dung Khách hàng 360 độ với Amazon Services</title>
 
     
-    <link href="/css/nucleus.css?1717176760" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1717176760" rel="stylesheet">
-    <link href="/css/hybrid.css?1717176760" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1717176760" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1717176760" rel="stylesheet">
-    <link href="/css/auto-complete.css?1717176760" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1717176760" rel="stylesheet">
-    <link href="/css/theme.css?1717176760" rel="stylesheet">
-    <link href="/css/tabs.css?1717176760" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1717176760" rel="stylesheet">
+    <link href="/css/nucleus.css?1717470095" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1717470095" rel="stylesheet">
+    <link href="/css/hybrid.css?1717470095" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1717470095" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1717470095" rel="stylesheet">
+    <link href="/css/auto-complete.css?1717470095" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1717470095" rel="stylesheet">
+    <link href="/css/theme.css?1717470095" rel="stylesheet">
+    <link href="/css/tabs.css?1717470095" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1717470095" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1717176760"></script>
+    <script src="/js/jquery-3.3.1.min.js?1717470095"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
     <div id="header">
       <a id="logo" href='/'>
   
-  <img src="/images/logo/aws-workshop.png">
+  <img src="https://vuha7394.github.io/workshop-aws2/images/logo/aws-workshop.png">
 </a>
 
     </div>
@@ -55,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1717176760"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1717176760"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1717470095"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1717470095"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1717176760"></script>
+<script type="text/javascript" src="/js/search.js?1717470095"></script>
 
     
   </div>
@@ -835,13 +835,13 @@
  
   
     
-    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Trực quan hoá với Quicksight" class="dd-item
+    <li data-nav-id="/chapter-vii/amazon-sagemaker-quicksight/" title="Khám phá dữ liệu với Amazon SageMaker và QuickSight" class="dd-item
         
         
         
         ">
       <a href="/chapter-vii/amazon-sagemaker-quicksight/">
-          <b>6.1. </b>Trực quan hoá với Quicksight
+          <b>6.1. </b>Khám phá dữ liệu với Amazon SageMaker và QuickSight
           
       </a>
       
@@ -968,6 +968,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
                   <span class="links">
                  
                  
@@ -993,6 +995,21 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#truy-xuất-dữ-liệu-từ-các-nguồn">Truy xuất dữ liệu từ các nguồn</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
@@ -1000,9 +1017,12 @@
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Truy xuất dữ liệu từ các nguồn
+            </h1>
           
 
         
@@ -1012,7 +1032,7 @@
 	<h3 id="truy-xuất-dữ-liệu-từ-các-nguồn">Truy xuất dữ liệu từ các nguồn</h3>
 <p>Trong phần này, chúng ta sẽ kích hoạt các bộ lập lịch (quy tắc) để tạo dữ liệu từ các nguồn khác nhau.<br>
 Bước 1: Đi tới <a href="https://us-west-2.console.aws.amazon.com/events/home?region=us-west-2#/rules">Amazon Eventbridge</a> -&gt; Buses -&gt; Rules, và bật từng quy tắc c360v-Schedule
-<img src="/images/assets/63.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/63.png" alt="360 customer view">
 Bước 2: Chọn từng mục của c360v-Schedule và bật nó. Lưu ý quan trọng: bật từng cái một. Không bật tất cả cùng một lúc.</p>
 <p>Order:</p>
 <ul>
@@ -1023,9 +1043,9 @@ Bước 2: Chọn từng mục của c360v-Schedule và bật nó. Lưu ý quan 
 <li>ScheduledGetGATables</li>
 <li>ScheduledIngestionPostgresql</li>
 </ul>
-<p><img src="/images/assets/64.png" alt="360 customer view">
+<p><img src="https://vuha7394.github.io/workshop-aws2/images/assets/64.png" alt="360 customer view">
 Bước 3: Lặp lại bước 2 cho từng mục c360v-Schedule từ trên xuống dưới, cho đến khi tất cả đều chuyển sang màu xanh.<br>
-<img src="/images/assets/65.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/65.png" alt="360 customer view">
 Amazon S3 là dịch vụ trung tâm của kiến trúc Data Lake trong AWS. Trong giải pháp của chúng tôi, chúng tôi sử dụng các hàm Lambda để lấy dữ liệu bên ngoài như BigQuery từ nguồn GA (Google Analytics):<br>
 <a href="https://www.kaggle.com/bigquery/google-analytics-sample">https://www.kaggle.com/bigquery/google-analytics-sample</a> các bảng và cũng tạo ra nhiều dữ liệu tổng hợp khác cho các tập dữ liệu khác.<br>
 Để bạn biết thêm, dưới đây là mã AWS Lambda gốc được sử dụng để trích xuất dữ liệu BigQuery, nhưng bây giờ bạn có thể sử dụng <a href="https://aws.amazon.com/appflow/">Amazon Appflow</a> cùng tài khoản GA của bạn</p>
@@ -1056,15 +1076,15 @@ def lambda_handler(event, context):
 <p>Nếu bạn muốn sử dụng mã này, bạn phải cài đặt thư viện gcloud python sdk trực tiếp và tạo một tệp bqfile.json với thông tin đăng nhập tài khoản dịch vụ gcloud của bạn, sau đó nén thư mục thư viện, bqfile.json, và lambda.py của bạn để triển khai nó lên các hàm AWS Lambda. Thiết lập ba biến môi trường để sử dụng nó hoặc gọi bảng, đường dẫn đến và bucket.<br>
 Xác minh dữ liệu được tạo bởi các hàm Lambda mà bạn đã bật bằng EventBridge.<br>
 Bước 1: Đi tới bảng điều khiển Amazon S3 để kiểm tra dữ liệu trong bucket raw của bạn. Tìm kiếm các bucket c360view.<br>
-<img src="/images/assets/66.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/66.png" alt="360 customer view">
 Bước 2: Nhấp vào bucket c360view&ndash;&lt;YOUR_ACCOUNT_ID&gt;-raw.<br>
 Làm mới bucket trong khi các mã Lambda đang chạy.<br>
-<img src="/images/assets/67.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/67.png" alt="360 customer view">
 Nếu sau 1 đến 5 phút bạn không thấy tất cả các thư mục: account, card, crm, data và gbank, quay lại <a href="https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#rules:">CloudWatch -&gt; Events -&gt; Rules</a> , và đánh dấu bộ lập lịch bạn thiếu dữ liệu, Tắt nó, và Bật lại.<br>
 Bước 3: Vào bên trong từng thư mục để kiểm tra các tệp được tạo bên trong.<br>
-<img src="/images/assets/68.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/68.png" alt="360 customer view">
 Account data, tại account folder.<br>
-<img src="/images/assets/69.png" alt="360 customer view">
+<img src="https://vuha7394.github.io/workshop-aws2/images/assets/69.png" alt="360 customer view">
 GA sessions data, at data/GA/ga_session_20YYMMDD folders.<br>
 Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
 
@@ -1076,8 +1096,6 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
 	
 </footer>
 
-        
-            </div> 
         
         </div>
         
@@ -1643,19 +1661,19 @@ Bấm nút &ldquo;Next&rdquo; để sang phần tiếp theo</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.min.js?1717176760"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1717176760"></script>
-    <script src="/js/jquery.sticky.js?1717176760"></script>
-    <script src="/js/featherlight.min.js?1717176760"></script>
-    <script src="/js/highlight.pack.js?1717176760"></script>
+    <script src="/js/clipboard.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.min.js?1717470095"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1717470095"></script>
+    <script src="/js/jquery.sticky.js?1717470095"></script>
+    <script src="/js/featherlight.min.js?1717470095"></script>
+    <script src="/js/highlight.pack.js?1717470095"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1717176760"></script>
-    <script src="/js/learn.js?1717176760"></script>
-    <script src="/js/hugo-learn.js?1717176760"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1717470095"></script>
+    <script src="/js/learn.js?1717470095"></script>
+    <script src="/js/hugo-learn.js?1717470095"></script>
     
         
-            <script src="/mermaid/mermaid.js?1717176760"></script>
+            <script src="/mermaid/mermaid.js?1717470095"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
